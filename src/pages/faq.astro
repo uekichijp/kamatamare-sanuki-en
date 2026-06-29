@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageIntro from "../components/PageIntro.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+---
+
+<BaseLayout
+  title="FAQ"
+  description="Frequently asked questions for first-time visitors to a Kamatamare Sanuki match."
+>
+  <PageIntro
+    eyebrow="Before matchday"
+    title="Frequently Asked Questions"
+    description="Short answers to common questions from international visitors attending their first match."
+  />
+  <section class="content-section">
+    <div class="container container--narrow faq-list">
+      <article class="faq-item">
+        <h2>Do I need to speak Japanese?</h2>
+        <p>
+          No. Most signs and announcements may be in Japanese, but staff can usually help with
+          simple questions. Keep your ticket ready and show the screen if explaining the details
+          is difficult.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>Where can I buy a ticket?</h2>
+        <p>
+          Ticket methods, prices, and seating categories may change. Use the
+          <a href="https://www.kamatamare.jp/ticket/" target="_blank" rel="noreferrer"
+            >official ticket page</a
+          > for current details. Check whether your seat is reserved or unreserved.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>How do I find the latest match information?</h2>
+        <p>
+          Check the club's official website on the day before you travel. Look for the confirmed
+          venue, kick-off time, entry schedule, transport notice, and any special stadium rules.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>How early should I arrive?</h2>
+        <p>
+          For a first visit, arriving well before kick-off is sensible. You will need time to
+          find the correct gate and seat, and you may want to look at food or merchandise.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>Can away supporters attend?</h2>
+        <p>
+          Yes, but some seating areas restrict which team's colours and goods may be displayed.
+          Check the official ticket description and matchday rules before choosing a seat.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>Is food available?</h2>
+        <p>
+          Food and drink are normally part of the home-match experience, but the available
+          stalls vary. Bring another payment method as well as a small amount of cash.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>What should I wear?</h2>
+        <p>
+          Wear comfortable shoes and dress for the weather. A hat and water may help in warm
+          conditions; an extra layer can be useful for evening matches. Check current rules
+          before bringing large bags or containers.
+        </p>
+      </article>
+      <article class="faq-item">
+        <h2>Is this an official guide?</h2>
+        <p>
+          No. This is an independent personal fan-made guide. Official club information always
+          takes priority, especially for tickets, schedules, access, and stadium rules.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <RelatedLinks
+    links={[
+      {
+        label: "Stadium & Access",
+        href: "/stadium/",
+        description: "Plan your route and review the matchday checklist.",
+      },
+      {
+        label: "About this guide",
+        href: "/about/",
+        description: "Read the scope and limitations of this independent guide.",
+      },
+    ]}
+  />
+</BaseLayout>

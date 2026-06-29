@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageIntro from "../components/PageIntro.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+---
+
+<BaseLayout
+  title="Stadium & Access"
+  description="Practical stadium and access information for attending a Kamatamare Sanuki match."
+>
+  <PageIntro
+    eyebrow="Plan your visit"
+    title="Stadium & Access"
+    description="The basic information you need to find the stadium and arrive with less stress."
+  />
+  <section class="content-section">
+    <div class="container container--narrow prose">
+      <h2>Home stadium</h2>
+      <p>
+        Kamatamare Sanuki usually plays its home matches at
+        <strong>Shikoku Kasei MEGLIO Stadium</strong>, a multi-purpose stadium in Marugame.
+      </p>
+      <address class="address-card">
+        Shikoku Kasei MEGLIO Stadium<br />
+        830 Kanakuracho, Marugame, Kagawa 763-0053
+      </address>
+      <p>
+        Some matches may use a different venue. Confirm the venue shown on the official match
+        page before starting your journey.
+      </p>
+
+      <h2>Travelling from a major station</h2>
+      <p>
+        JR Marugame Station is the main railway station for the stadium area. Matchday shuttle
+        buses or local buses may be available, but routes and timetables can change. Check the
+        club's current access information before your visit.
+      </p>
+      <p>
+        If you are staying in Takamatsu, allow time for the train journey to Marugame and your
+        onward connection. Do not plan a tight connection immediately after the final whistle.
+      </p>
+
+      <h2>If you travel by car</h2>
+      <p>
+        Parking space can be limited. Never park on nearby roads, private property, or at local
+        shops without permission. Follow the signs and instructions from matchday staff.
+      </p>
+
+      <h2>Before leaving your hotel</h2>
+      <ul class="check-list">
+        <li>Confirm the stadium name, date, and kick-off time.</li>
+        <li>Check the latest ticket and entry information.</li>
+        <li>Save your return route and the last useful train or bus.</li>
+        <li>Allow extra time for queues and finding the correct entrance.</li>
+        <li>Check the weather; much of the seating may be exposed.</li>
+      </ul>
+
+      <div class="official-box">
+        <h2>Check official information</h2>
+        <p>
+          Transport services, parking arrangements, entrance times, and stadium rules can change
+          for each match.
+        </p>
+        <p>
+          <a
+            class="text-link"
+            href="https://kamatamare.jp/stadium/access.php"
+            target="_blank"
+            rel="noreferrer">Open the official stadium access page</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section content-section--muted">
+    <div class="container">
+      <h2>Simple matchday flow</h2>
+      <div class="card-grid">
+        <article class="card">
+          <p class="card__step">1</p>
+          <h3>Arrive early</h3>
+          <p>Give yourself time to find the entrance, buy food, and understand the stadium layout.</p>
+        </article>
+        <article class="card">
+          <p class="card__step">2</p>
+          <h3>Follow your ticket</h3>
+          <p>Use the gate and seating area shown on your ticket. Ask staff if you are unsure.</p>
+        </article>
+        <article class="card">
+          <p class="card__step">3</p>
+          <h3>Plan the return</h3>
+          <p>Expect crowds after the match and keep enough time for your onward transport.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <RelatedLinks
+    links={[
+      {
+        label: "FAQ",
+        href: "/faq/",
+        description: "Check tickets, language, food, weather, and matchday basics.",
+      },
+      {
+        label: "Club History",
+        href: "/history/",
+        description: "Meet the local club before your visit.",
+      },
+    ]}
+  />
+</BaseLayout>

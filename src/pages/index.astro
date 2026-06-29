@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+---
+
+<BaseLayout
+  title="Home"
+  description="An independent English guide for first-time visitors attending a Kamatamare Sanuki match."
+>
+  <section class="hero">
+    <div class="container hero__content">
+      <p class="eyebrow">A practical guide for first-time visitors</p>
+      <h1>Enjoy a Kamatamare Sanuki match in Kagawa</h1>
+      <p class="hero__description">
+        A simple, independent English guide for international visitors attending a Kamatamare
+        Sanuki football match for the first time.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="prose intro-copy">
+        <h2>Welcome to football in Kagawa</h2>
+        <p>
+          Kamatamare Sanuki is a professional football club representing Kagawa Prefecture.
+          A home match can be an enjoyable addition to a trip around Takamatsu, Marugame, or
+          wider Shikoku—even if you do not speak Japanese.
+        </p>
+        <p>
+          Use this guide to understand the basics, choose how to travel, and know what to expect.
+          For match dates, ticket prices, seating rules, and other information that may change,
+          always check the <a href="https://www.kamatamare.jp/" target="_blank" rel="noreferrer"
+            >official Kamatamare Sanuki website</a
+          > before you go.
+        </p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <p class="card__step">1</p>
+          <h3>Check the match</h3>
+          <p>Confirm the date, kick-off time, ticket sales, and latest notices on the official website.</p>
+        </article>
+        <article class="card">
+          <p class="card__step">2</p>
+          <h3>Plan your journey</h3>
+          <p>Check your route to the stadium and allow extra time before kick-off.</p>
+        </article>
+        <article class="card">
+          <p class="card__step">3</p>
+          <h3>Enjoy the day</h3>
+          <p>Arrive early, follow staff directions, and enjoy the local matchday atmosphere.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <RelatedLinks
+    links={[
+      {
+        label: "Stadium & Access",
+        href: "/stadium/",
+        description: "Start planning your journey to the stadium.",
+      },
+      {
+        label: "Frequently Asked Questions",
+        href: "/faq/",
+        description: "Get short answers to common first-visit questions.",
+      },
+      {
+        label: "About this guide",
+        href: "/about/",
+        description: "Learn who made this guide and how to use it.",
+      },
+    ]}
+  />
+</BaseLayout>

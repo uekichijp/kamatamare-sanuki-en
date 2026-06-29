@@ -1,0 +1,25 @@
+---
+import { navigation } from "../data/navigation";
+
+const currentPath = Astro.url.pathname;
+const isCurrent = (href: string) =>
+  href === "/" ? currentPath === href : currentPath.startsWith(href);
+---
+
+<nav class="site-nav" aria-label="Main navigation">
+  <ul class="site-nav__list">
+    {
+      navigation.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class:list={{ "site-nav__link": true, "is-current": isCurrent(item.href) }}
+            aria-current={isCurrent(item.href) ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

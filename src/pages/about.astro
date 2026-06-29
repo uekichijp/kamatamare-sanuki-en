@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageIntro from "../components/PageIntro.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+---
+
+<BaseLayout
+  title="About"
+  description="About the independent Kamatamare Sanuki English Matchday Guide."
+>
+  <PageIntro
+    eyebrow="About this project"
+    title="About This Guide"
+    description="A small fan-made project for international visitors who want to enjoy football in Kagawa."
+  />
+  <section class="content-section">
+    <div class="container container--narrow prose">
+      <h2>Why this guide exists</h2>
+      <p>
+        Finding local matchday information can be difficult when you are travelling in Japan and
+        do not read Japanese. This guide collects the basic context you need before attending a
+        Kamatamare Sanuki home match.
+      </p>
+      <p>
+        It is written for first-time visitors, not only experienced football supporters. The aim
+        is to keep the English short, practical, and easy to check on a phone.
+      </p>
+
+      <h2>Independent and unofficial</h2>
+      <p>
+        This is an independent personal fan-made guide. It is not produced, approved, or operated
+        by Kamatamare Sanuki, the J.League, the stadium, or a local government.
+      </p>
+      <p>
+        Information on this site is provided as a general travel aid. It may become outdated.
+        The club's official information takes priority if there is any difference.
+      </p>
+
+      <h2>What this site does not cover</h2>
+      <p>
+        This is not a live news or results service. It does not maintain current player lists,
+        ticket prices, match schedules, transport timetables, or match-specific rules.
+      </p>
+      <p>
+        Before travelling, please check the
+        <a href="https://www.kamatamare.jp/" target="_blank" rel="noreferrer"
+          >official Kamatamare Sanuki website</a
+        > for the latest information.
+      </p>
+    </div>
+  </section>
+
+  <RelatedLinks
+    links={[
+      {
+        label: "Club History",
+        href: "/history/",
+        description: "Learn the story behind Kamatamare Sanuki.",
+      },
+      {
+        label: "Stadium & Access",
+        href: "/stadium/",
+        description: "Prepare for your journey to a home match.",
+      },
+    ]}
+  />
+</BaseLayout>

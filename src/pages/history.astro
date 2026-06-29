@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageIntro from "../components/PageIntro.astro";
+import RelatedLinks from "../components/RelatedLinks.astro";
+---
+
+<BaseLayout
+  title="Club History"
+  description="A brief introduction to the history of Kamatamare Sanuki."
+>
+  <PageIntro
+    eyebrow="Meet the club"
+    title="Club History"
+    description="A quick introduction to the club, its unusual name, and its journey into the J.League."
+  />
+  <section class="content-section">
+    <div class="container container--narrow prose">
+      <h2>A club for Kagawa</h2>
+      <p>
+        Kamatamare Sanuki represents Kagawa Prefecture, an area historically known as Sanuki.
+        The club is closely connected to the local community and uses light blue as its main
+        colour.
+      </p>
+
+      <h2>What does “Kamatamare” mean?</h2>
+      <p>
+        The name combines <em>kamatama udon</em>, a popular Kagawa noodle dish, with
+        <em>mare</em>, the Italian word for “sea.” It is a playful name that links football with
+        two strong images of the region: Sanuki udon and the Seto Inland Sea.
+      </p>
+
+      <h2>A short timeline</h2>
+      <ol class="timeline">
+        <li>
+          <strong>2006</strong>
+          <span>The club began using the name Kamatamare Sanuki and started its push toward the J.League.</span>
+        </li>
+        <li>
+          <strong>2010</strong>
+          <span>The team earned promotion from the regional leagues to the Japan Football League.</span>
+        </li>
+        <li>
+          <strong>2013</strong>
+          <span>Kamatamare won a promotion play-off and reached J2.</span>
+        </li>
+        <li>
+          <strong>2014</strong>
+          <span>The club played its first season as a J.League member.</span>
+        </li>
+      </ol>
+
+      <p>
+        For a full year-by-year record and current club information, visit the
+        <a href="https://www.kamatamare.jp/club/history.php" target="_blank" rel="noreferrer"
+          >official club history page</a
+        >.
+      </p>
+    </div>
+  </section>
+
+  <RelatedLinks
+    links={[
+      {
+        label: "Stadium & Access",
+        href: "/stadium/",
+        description: "Find out where the club plays its home matches.",
+      },
+      {
+        label: "FAQ",
+        href: "/faq/",
+        description: "Read practical answers for your first match.",
+      },
+    ]}
+  />
+</BaseLayout>
