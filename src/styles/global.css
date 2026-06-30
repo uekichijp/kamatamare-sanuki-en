@@ -213,6 +213,12 @@ h2 {
   gap: 1.25rem;
 }
 
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
 .card {
   padding: 1.5rem;
   border: 1px solid var(--color-border);
@@ -229,6 +235,16 @@ h2 {
 
 .card p:last-child {
   margin-bottom: 0;
+}
+
+.resource-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.resource-card p {
+  flex-grow: 1;
 }
 
 .card__step {
@@ -387,6 +403,10 @@ h2 {
   }
 
   .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-grid {
     grid-template-columns: 1fr;
   }
 

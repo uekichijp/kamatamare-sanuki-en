@@ -4,4 +4,5 @@ export const navigation = [
   { label: "Club History", href: "/history/" },
   { label: "Stadium & Access", href: "/stadium/" },
   { label: "FAQ", href: "/faq/" },
+  { label: "Official Resources", href: "/official-resources/" },
 ] as const;

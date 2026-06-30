@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageIntro from "../components/PageIntro.astro";
+
+const resources = [
+  {
+    label: "Kamatamare Sanuki Official Website",
+    href: "https://www.kamatamare.jp/",
+    description: "The club's main website and starting point for official information.",
+  },
+  {
+    label: "Official News",
+    href: "https://www.kamatamare.jp/news/",
+    description: "Club announcements, matchday updates, events, and team news.",
+  },
+  {
+    label: "Official Match Schedule",
+    href: "https://www.kamatamare.jp/match/",
+    description: "Current fixtures, kick-off times, venues, and match results.",
+  },
+  {
+    label: "Official Ticket Information",
+    href: "https://www.kamatamare.jp/ticket/",
+    description: "Current seat categories, prices, and ticket purchase information.",
+  },
+  {
+    label: "Official X",
+    href: "https://twitter.com/kamatama_kouhou",
+    description: "Short announcements and timely updates from the club.",
+  },
+  {
+    label: "Official Instagram",
+    href: "https://www.instagram.com/kamatama_kouhou/",
+    description: "Official photos and videos from matches, training, and club activities.",
+  },
+  {
+    label: "Official YouTube",
+    href: "https://www.youtube.com/user/kamatamareofficial/",
+    description: "Official match highlights, interviews, and club videos.",
+  },
+  {
+    label: "J.League Official Club Page",
+    href: "https://www.jleague.co/en/clubs/Kamatamare-Sanuki/",
+    description: "An English-language club profile from the official J.League website.",
+  },
+] as const;
+---
+
+<BaseLayout
+  title="Official Resources"
+  description="Official links for Kamatamare Sanuki schedules, tickets, news, social media, and matchday information."
+>
+  <PageIntro
+    eyebrow="Check the latest information"
+    title="Official Resources"
+    description="Official club and league links to use when planning your visit."
+  />
+
+  <section class="content-section">
+    <div class="container container--narrow prose intro-copy">
+      <h2>Use official sources before you travel</h2>
+      <p>
+        This page collects official links for Kamatamare Sanuki and related matchday information.
+      </p>
+      <p>
+        This fan-made guide is not an official club website. Please check official sources for
+        the latest match schedules, tickets, stadium rules, and news.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="resource-grid">
+        {
+          resources.map((resource) => (
+            <article class="card resource-card">
+              <h2>{resource.label}</h2>
+              <p>{resource.description}</p>
+              <a
+                class="text-link"
+                href={resource.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open official page <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
