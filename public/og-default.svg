@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Kamatamare Sanuki English Matchday Guide</title>
+  <desc id="description">An independent English guide for visitors attending a match in Kagawa, Japan.</desc>
+  <rect width="1200" height="630" fill="#f5f8fa"/>
+  <rect width="1200" height="24" fill="#f3b61f"/>
+  <circle cx="955" cy="315" r="160" fill="none" stroke="#0057a8" stroke-width="28"/>
+  <path d="M795 315h320M955 155v320" fill="none" stroke="#f3b61f" stroke-width="28"/>
+  <text x="90" y="230" fill="#0057a8" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">
+    KAMATAMARE SANUKI
+  </text>
+  <text x="90" y="315" fill="#1d2935" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">
+    English Matchday Guide
+  </text>
+  <text x="90" y="385" fill="#5b6875" font-family="Arial, Helvetica, sans-serif" font-size="32">
+    A practical fan-made guide for visitors to Kagawa, Japan
+  </text>
+</svg>

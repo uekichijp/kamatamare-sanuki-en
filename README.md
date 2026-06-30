@@ -25,6 +25,18 @@ npm run build
 
 The static site is generated in `dist/`.
 
+## Production site URL
+
+Canonical URLs, Open Graph URLs, `robots.txt`, and the sitemap use
+`PUBLIC_SITE_URL`. Set it to the final public origin when deploying:
+
+```sh
+PUBLIC_SITE_URL=https://your-domain.example npm run build
+```
+
+Until it is set, the project uses `https://kamatamare-sanuki-guide.pages.dev`
+as a temporary URL.
+
 ## Main structure
 
 - `src/pages/`: site pages and routes

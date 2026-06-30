@@ -9,8 +9,9 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const pageTitle =
-  title === "Home" ? "Kamatamare Sanuki English Guide" : `${title} | Kamatamare Sanuki English Guide`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL("/og-default.svg", Astro.site);
+const isNotFoundPage = Astro.url.pathname === "/404.html";
 ---
 
 <!doctype html>
@@ -20,7 +21,17 @@ const pageTitle =
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    {isNotFoundPage && <meta name="robots" content="noindex, nofollow" />}
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImageURL} />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
