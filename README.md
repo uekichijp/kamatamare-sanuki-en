@@ -34,7 +34,7 @@ Canonical URLs, Open Graph URLs, `robots.txt`, and the sitemap use
 PUBLIC_SITE_URL=https://your-domain.example npm run build
 ```
 
-Until it is set, the project uses `https://kamatamare-sanuki-guide.pages.dev`
+Until it is set, the project uses `https://kamatamare-sanuki-en.pages.dev`
 as a temporary URL.
 
 ## Main structure
